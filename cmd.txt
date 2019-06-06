@@ -1,0 +1,6 @@
+create virtual env
+	Within your project:
+		virtualenv env
+
+activate virtual env
+	env\Scripts\activate.bat
