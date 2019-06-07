@@ -44,7 +44,33 @@ def webhook():
 
         # pick any :)
         response = {
-            'fulfillmentText': 'Today we recommend {0}!'.format(random.choice(['Margherita', 'Salami'])),
+            "fulfillmentMessages": [
+              {
+                "text": {
+                  "text": [
+                    "olrit"
+                  ]
+                },
+                "platform": "LINE"
+              },
+              {
+                "payload": {
+                  "line": {
+                    "type": "sticker",
+                    "packageId": "1",
+                    "stickerId": "1"
+                  }
+                },
+                "platform": "LINE"
+              },
+              {
+                "text": {
+                  "text": [
+                    ""
+                  ]
+                }
+              }
+            ]
         }
     else:
         # something went wrong here, we got unknow intent or request without intent
