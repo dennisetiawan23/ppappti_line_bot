@@ -57,8 +57,8 @@ def webhook():
                 "payload": {
                   "line": {
                     "type": "sticker",
-                    "packageId": "1",
-                    "stickerId": "1"
+                    "packageId": "11538",
+                    "stickerId": "51626507"
                   }
                 },
                 "platform": "LINE"
