@@ -62,13 +62,6 @@ def webhook():
                   }
                 },
                 "platform": "LINE"
-              },
-              {
-                "text": {
-                  "text": [
-                    ""
-                  ]
-                }
               }
             ]
         }
@@ -110,10 +103,10 @@ if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
 
-# if __name__ == '__main__':
+# if __name__ == '__main__': //for ngrok
 #     app.run(debug=False, port=5000, host='0.0.0.0', threaded=True)
 
-# Koding with heroku
+# Koding with heroku directly to line
 # # mybot/app.py
 # import os
 # from decouple import config
